@@ -42,17 +42,15 @@ gap:12px;
 
 .logo-icon{
 
-width:55px;
+width:60px;
 
-height:55px;
+height:60px;
 
 background:linear-gradient(
 135deg,
-var(--primary-color),
-var(--secondary-color)
+#2563EB,
+#06B6D4
 );
-
-border-radius:18px;
 
 display:flex;
 
@@ -60,13 +58,32 @@ justify-content:center;
 
 align-items:center;
 
+clip-path:polygon(
+25% 5%,
+75% 5%,
+100% 50%,
+75% 95%,
+25% 95%,
+0% 50%
+);
+
 color:white;
 
 font-weight:700;
 
 font-size:18px;
 
-box-shadow:var(--box-shadow);
+box-shadow:0 0 25px rgba(59,130,246,.35);
+
+transition:.4s ease;
+
+}
+
+.logo:hover .logo-icon{
+
+transform:rotate(8deg) scale(1.08);
+
+box-shadow:0 0 45px rgba(59,130,246,.55);
 
 }
 
@@ -92,19 +109,56 @@ gap:35px;
 
 .nav-links a{
 
-color:var(--text-color);
+position:relative;
 
 font-weight:500;
 
-transition:var(--transition);
+color:var(--text-color);
 
-position:relative;
+transition:.35s;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:2px;
+
+background:var(--primary-color);
+
+transition:.35s;
 
 }
 
 .nav-links a:hover{
 
-color:var(--primary-color);
+color:white;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+.nav-links a.active{
+
+color:white;
+
+}
+
+.nav-links a.active::after{
+
+width:100%;
 
 }
 
@@ -141,5 +195,24 @@ font-size:28px;
 color:white;
 
 cursor:pointer;
+
+}
+/*==============================
+      SCROLLED NAVBAR
+==============================*/
+
+.header.scrolled{
+
+background:rgba(11,17,32,.75);
+
+backdrop-filter:blur(14px);
+
+-webkit-backdrop-filter:blur(14px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 10px 35px rgba(0,0,0,.25);
+
+padding:14px 0;
 
 }

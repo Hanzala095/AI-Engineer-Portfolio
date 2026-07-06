@@ -32,6 +32,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <link rel="stylesheet" href="css/hero.css"> 
 
+<link rel="stylesheet" href="css/background.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
 <link rel="stylesheet" href="css/responsive.css">
 
 <link rel="stylesheet" href="css/animations.css">
@@ -107,60 +111,122 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <main>
 
 <section id="home" class="hero">
+    <div class="hero-background">
 
-<div class="container hero-container">
+    <span class="gradient-one"></span>
 
-<div class="hero-content">
+    <span class="gradient-two"></span>
 
-<p class="hero-intro">
-Hi, I'm
-</p>
+    <span class="gradient-three"></span>
 
-<h1>
-Muhammad Hanzala Khan
-</h1>
+    </div>
+    <div class="container hero-container">
+
+        <!-- Left Content -->
+
+        <div class="hero-content">
+
+            <p class="hero-intro">
+                Hi, I'm
+            </p>
+
+            <h1>
+                Muhammad <br>
+                Hanzala Khan
+            </h1>
+
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p class="hero-description">
+                Building intelligent, ethical, and human-centered AI solutions through research,
+                innovation, and real-world applications.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="primary-btn">
+                    Explore Projects
+                </a>
+
+                <a href="#" class="secondary-btn">
+                    Resume
+                </a>
+
+            </div>
+
+            <!-- Scroll Indicator -->
+
+            <div class="scroll-down">
+
+                <i class="fa-solid fa-computer-mouse"></i>
+
+                <p>Scroll</p>
+
+            </div>
+
+        </div>
+
+        <!-- Right Image -->
+
+        <div class="hero-image">
+
+            <img src="assets/profile/profile.png"
+                 alt="Muhammad Hanzala Khan">
+
+        </div>
+
+    </div>
+
+</section>
+<section class="dashboard">
+
+<div class="container">
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h2 id="project-count">0</h2>
+
+<p>AI Projects</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2 id="experience-count">0</h2>
+
+<p>Experiences</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2 id="skill-count">0</h2>
+
+<p>AI & Dev Tools</p>
+
+</div>
+
+<div class="dashboard-card">
 
 <h2>
 
-<span id="typing"></span>
+🟢
 
 </h2>
 
-<p class="hero-description">
-
-Building intelligent, ethical, and human-centered AI solutions through research, innovation, and real-world applications.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#projects" class="primary-btn">
-
-Explore Projects
-
-</a>
-
-<a href="#" class="secondary-btn">
-
-Resume
-
-</a>
+<p>Open to AI Opportunities</p>
 
 </div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="assets/profile/profile.jpg"
-alt="Muhammad Hanzala Khan">
 
 </div>
 
 </div>
 
 </section>
-
 </main>
 
 <!-- JS -->
@@ -170,6 +236,8 @@ alt="Muhammad Hanzala Khan">
 <script src="js/script.js"></script>
 
 <script src="js/typing.js"></script>
+
+<script src="js/dashboard.js"></script>
 
 </body>
 
