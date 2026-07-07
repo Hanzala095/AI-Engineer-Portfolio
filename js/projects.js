@@ -1,60 +1,16 @@
+let allProjects = [];
+
 async function loadProjects() {
 
     const response = await fetch("data/projects.json");
-    const projects = await response.json();
-    const featured = projects.find(project => project.featured);
 
-const featuredContainer = document.getElementById("featured-project");
+    allProjects = await response.json();
 
-featuredContainer.innerHTML = `
+    displayProjects(allProjects);
 
-<div class="featured-card">
+}
 
-<div class="featured-left">
-
-<img src="assets/projects/${featured.image}" alt="${featured.title}">
-
-</div>
-
-<div class="featured-right">
-
-<span class="featured-tag">
-
-⭐ Featured AI System
-
-</span>
-
-<h2>${featured.title}</h2>
-
-<p>${featured.description}</p>
-
-<div class="featured-tech">
-
-${featured.technologies.map(tech=>`<span>${tech}</span>`).join("")}
-
-</div>
-
-<div class="project-buttons">
-
-<a href="${featured.github}" class="github-btn">
-
-Source Code
-
-</a>
-
-<a href="pages/project-details.html?id=${featured.id}" class="case-btn">
-
-Case Study →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-`;
+function displayProjects(projects) {
 
     const grid = document.getElementById("project-grid");
 
@@ -64,47 +20,83 @@ Case Study →
 
         grid.innerHTML += `
 
-        <div class="project-card">
+<div class="project-card">
 
-            <div class="project-top">
+<div class="project-header">
 
-                <span class="project-category">${project.category}</span>
+<span class="project-category">
 
-                ${project.featured ? `<span class="featured-badge">⭐ Featured</span>` : ""}
+${project.category}
 
-            </div>
+</span>
 
-            <h3>${project.title}</h3>
+<span class="project-year">
 
-            <p>${project.description}</p>
+${project.year}
 
-            <div class="project-tech">
+</span>
 
-                ${project.technologies.map(tech =>
-                    `<span>${tech}</span>`
-                ).join("")}
+</div>
 
-            </div>
+${project.featured ?
 
-            <div class="project-buttons">
+`<span class="featured-badge">
 
-                <a href="${project.github}" target="_blank" class="github-btn">
+⭐ Featured Project
 
-                    Source Code
+</span>`
 
-                </a>
+:""}
 
-                <a href="pages/project-details.html?id=${project.id}" class="case-btn">
+<h3>${project.title}</h3>
 
-                    Case Study →
+<p>${project.shortDescription}</p>
 
-                </a>
+<div class="project-tech">
 
-            </div>
+${project.technologies.map(tech =>
 
-        </div>
+`<span>${tech}</span>`
 
-        `;
+).join("")}
+
+</div>
+
+<div class="project-meta">
+
+<span>${project.type}</span>
+
+<span>${project.team}</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="${project.github}"
+
+target="_blank"
+
+class="github-btn">
+
+Source Code
+
+</a>
+
+<a
+
+href="pages/project-details.html?id=${project.id}"
+
+class="case-btn">
+
+Case Study →
+
+</a>
+
+</div>
+
+</div>
+
+`;
 
     });
 

@@ -97,13 +97,17 @@ font-weight:600;
 
 .featured-badge{
 
-background:#2563EB;
+padding:7px 14px;
 
-padding:6px 12px;
+background:linear-gradient(90deg,#2563EB,#4F46E5);
 
 border-radius:30px;
 
 font-size:13px;
+
+font-weight:600;
+
+color:white;
 
 }
 
@@ -241,5 +245,38 @@ transition:.3s;
 .filter-btn.active{
 
 background:#2563EB;
+
+}
+.project-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.project-year{
+
+color:#94A3B8;
+
+font-size:14px;
+
+}
+
+.project-meta{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:25px 0;
+
+font-size:14px;
+
+color:#AEB5C3;
 
 }
