@@ -1,32 +1,82 @@
-async function loadCertificates(){
+async function loadCertificates() {
 
-const response=await fetch("data/certificates.json");
+    const response = await fetch("data/certificates.json");
 
-const certificates=await response.json();
+    const certificates = await response.json();
 
-const grid=document.getElementById("certificate-grid");
+    const container = document.getElementById("certificate-grid");
 
-certificates.forEach(item=>{
+    container.innerHTML = "";
 
-grid.innerHTML+=`
+    certificates.forEach(certificate => {
+
+        container.innerHTML += `
 
 <div class="certificate-card">
 
-<h3>${item.title}</h3>
+    ${certificate.featured ?
 
-<p>${item.issuer}</p>
+    `<span class="certificate-badge">
 
-<a href="${item.credential}" target="_blank">
+        ⭐ Featured
 
-View Credential →
+    </span>`
 
-</a>
+    : ""}
+
+    <img
+
+    src="${certificate.image}"
+
+    alt="${certificate.title}"
+
+    class="certificate-image">
+
+    <h3>
+
+        ${certificate.title}
+
+    </h3>
+
+    <p class="issuer">
+
+        ${certificate.issuer}
+
+    </p>
+
+    <p class="date">
+
+        ${certificate.date}
+
+    </p>
+
+    <div class="certificate-skills">
+
+        ${certificate.skills.map(skill =>
+
+            `<span>${skill}</span>`
+
+        ).join("")}
+
+    </div>
+
+    <a
+
+    href="${certificate.pdf}"
+
+    target="_blank"
+
+    class="certificate-btn">
+
+        View Certificate
+
+    </a>
 
 </div>
 
 `;
 
-});
+    });
 
 }
 

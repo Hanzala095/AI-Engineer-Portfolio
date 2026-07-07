@@ -73,3 +73,20 @@ opacity:1;
 transform:scale(1);
 
 }
+.hidden-section{
+
+opacity:0;
+
+transform:translateY(70px);
+
+transition:1s;
+
+}
+
+.show-section{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
