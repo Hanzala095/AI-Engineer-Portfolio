@@ -1,0 +1,32 @@
+[
+  {
+    "title":"Computer Vision",
+    "icon":"fa-solid fa-eye",
+    "description":"Developing intelligent visual systems for safety, healthcare and industrial automation."
+  },
+  {
+    "title":"Machine Learning",
+    "icon":"fa-solid fa-brain",
+    "description":"Building predictive models and intelligent decision-making systems."
+  },
+  {
+    "title":"Natural Language Processing",
+    "icon":"fa-solid fa-comments",
+    "description":"Creating AI systems capable of understanding and processing human language."
+  },
+  {
+    "title":"Healthcare AI",
+    "icon":"fa-solid fa-heart-pulse",
+    "description":"Applying AI to medical diagnosis, disease prediction and healthcare analytics."
+  },
+  {
+    "title":"Cybersecurity",
+    "icon":"fa-solid fa-shield-halved",
+    "description":"Developing AI-driven solutions for digital security and cyber threat analysis."
+  },
+  {
+    "title":"Generative AI",
+    "icon":"fa-solid fa-wand-magic-sparkles",
+    "description":"Exploring LLMs, intelligent assistants and modern AI applications."
+  }
+]

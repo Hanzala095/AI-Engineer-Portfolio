@@ -1,46 +1,95 @@
 [
   {
-    "title":"Factory Compliance Monitoring System"
+    "id": 1,
+    "title": "Factory Compliance Monitoring System",
+    "featured": true,
+    "category": "Computer Vision",
+    "domains": [
+      "Computer Vision",
+      "Deep Learning",
+      "Industrial AI"
+    ],
+    "difficulty": "Advanced",
+    "year": "2026",
+    "status": "Completed",
+    "github": "ADD_GITHUB_LINK_HERE",
+    "image": "factory.png",
+    "description": "An AI-powered workplace safety monitoring system that detects compliance with industrial safety policies in real time.",
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "Flask",
+      "MobileNetV2"
+    ]
   },
-
   {
-    "title":"Scholarship Finder System"
+    "id": 2,
+    "title": "Scholarship Finder System",
+    "featured": false,
+    "category": "Full Stack",
+    "domains": [
+      "Web Development",
+      "Automation"
+    ],
+    "difficulty": "Intermediate",
+    "year": "2026",
+    "status": "Completed",
+    "github": "https://github.com/Hanzala095",
+    "image": "scholarship.png",
+    "description": "A Flask-based platform that scrapes scholarship websites, stores data in MySQL and sends automated reminder emails.",
+    "technologies": [
+      "Python",
+      "Flask",
+      "MySQL",
+      "BeautifulSoup",
+      "HTML",
+      "CSS"
+    ]
   },
-
   {
-    "title":"Emotion-Based Music Recommendation"
+    "id": 3,
+    "title": "AI Cybersecurity Advisor",
+    "featured": false,
+    "category": "Cybersecurity",
+    "domains": [
+      "Generative AI",
+      "Cybersecurity"
+    ],
+    "difficulty": "Advanced",
+    "year": "2026",
+    "status": "Completed",
+    "github": "https://github.com/Hanzala095",
+    "image": "cyber.png",
+    "description": "AI assistant that integrates GPT, VirusTotal and Have I Been Pwned APIs to analyze websites and improve cyber awareness.",
+    "technologies": [
+      "Python",
+      "Flask",
+      "OpenAI",
+      "VirusTotal API",
+      "HIBP API"
+    ]
   },
-
   {
-    "title":"Brand Sentiment Monitor"
-  },
-
-  {
-    "title":"Seizure Prediction using Transformer"
-  },
-
-  {
-    "title":"Breast Cancer Classification"
-  },
-
-  {
-    "title":"Brain Tumor Segmentation"
-  },
-
-  {
-    "title":"AI Cybersecurity Advisor"
-  },
-
-  {
-    "title":"Ethereum Forecasting"
-  },
-
-  {
-    "title":"HealthCheck Protocol"
-  },
-
-  {
-    "title":"File Management System"
+    "id": 4,
+    "title": "Brand Sentiment Monitor",
+    "featured": false,
+    "category": "Natural Language Processing",
+    "domains": [
+      "NLP",
+      "Named Entity Recognition"
+    ],
+    "difficulty": "Advanced",
+    "year": "2026",
+    "status": "Completed",
+    "github": "https://github.com/Hanzala095",
+    "image": "sentiment.png",
+    "description": "Real-time social listening platform using sentiment analysis, NER and an interactive Streamlit dashboard.",
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "spaCy",
+      "Transformers"
+    ]
   }
-
 ]

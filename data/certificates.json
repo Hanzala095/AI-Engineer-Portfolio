@@ -1,0 +1,20 @@
+[
+  {
+    "title":"Machine Learning Specialization",
+    "issuer":"Coursera",
+    "image":"coursera.png",
+    "credential":"#"
+  },
+  {
+    "title":"Python for Everybody",
+    "issuer":"Coursera",
+    "image":"coursera.png",
+    "credential":"#"
+  },
+  {
+    "title":"Artificial Intelligence",
+    "issuer":"Coursera",
+    "image":"coursera.png",
+    "credential":"#"
+  }
+]

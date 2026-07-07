@@ -1,0 +1,57 @@
+.research{
+
+padding:120px 0;
+
+}
+
+.research-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.research-card{
+
+padding:35px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.4s;
+
+text-align:center;
+
+}
+
+.research-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2563EB;
+
+box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.research-card i{
+
+font-size:40px;
+
+color:#3B82F6;
+
+margin-bottom:20px;
+
+}
+
+.research-card h3{
+
+margin-bottom:15px;
+
+}

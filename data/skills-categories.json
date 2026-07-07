@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Programming",
+    "skills": ["Python", "C++", "JavaScript", "HTML5", "CSS3"]
+  },
+  {
+    "category": "Artificial Intelligence",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Generative AI"
+    ]
+  },
+  {
+    "category": "Frameworks & Libraries",
+    "skills": [
+      "TensorFlow",
+      "PyTorch",
+      "OpenCV",
+      "Scikit-learn",
+      "Flask",
+      "Streamlit"
+    ]
+  },
+  {
+    "category": "Databases & Tools",
+    "skills": [
+      "MySQL",
+      "Git",
+      "GitHub",
+      "Linux",
+      "Google Colab",
+      "VS Code"
+    ]
+  }
+]
