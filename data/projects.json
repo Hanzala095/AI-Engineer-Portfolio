@@ -3,221 +3,202 @@
     "id": 1,
     "title": "Factory Compliance Monitoring System",
     "category": "Computer Vision",
-    "type": "Internship",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
+    "type": "Internship Project",
+    "team": "ITSOLERA",
     "featured": true,
-    "difficulty": "Advanced",
-    "thumbnail": "factory-compliance.png",
-    "github": "https://github.com/Hanzala095/Genesys_AI_Assessment",
+    "image": "assets/projects/factory-compliance.png",
+    "shortDescription": "AI-powered workplace safety monitoring system using Computer Vision, TensorFlow and policy-based compliance detection.",
     "technologies": [
       "Python",
       "TensorFlow",
-      "Flask",
       "OpenCV",
+      "Flask",
       "MobileNetV2"
     ],
-    "shortDescription": "AI-powered industrial safety monitoring using computer vision."
+    "github": "https://github.com/Hanzala095/Genesys_AI_Assessment"
   },
   {
     "id": 2,
     "title": "Scholarship Finder System",
     "category": "Full Stack",
-    "type": "Academic",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
-    "featured": true,
-    "difficulty": "Intermediate",
-    "thumbnail": "scholarship-finder.png",
-    "github": "https://github.com/Hanzala095/ScholarshipFinder",
+    "type": "Internship Project",
+    "team": "ITSOLERA",
+    "featured": false,
+    "image": "assets/projects/scholarship-finder.png",
+    "shortDescription": "Flask-based platform that scrapes scholarship websites, stores data in MySQL and sends automated reminder emails.",
     "technologies": [
       "Python",
       "Flask",
       "MySQL",
       "BeautifulSoup",
-      "SMTP"
+      "HTML",
+      "CSS"
     ],
-    "shortDescription": "Automated scholarship discovery and reminder platform."
+    "github": "https://github.com/Hanzala095/ScholarshipFinder"
   },
   {
     "id": 3,
     "title": "AI Cybersecurity Advisor",
     "category": "Cybersecurity",
-    "type": "Personal",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
-    "featured": true,
-    "difficulty": "Advanced",
-    "thumbnail": "cybersecurity-advisor.png",
-    "github": "https://github.com/Hanzala095/ai-cybersecurity-advisor",
+    "type": "AI Assistant",
+    "team": "Personal Project",
+    "featured": false,
+    "image": "assets/projects/cybersecurity-advisor.png",
+    "shortDescription": "AI cybersecurity assistant integrating GPT, VirusTotal and Have I Been Pwned APIs for cyber awareness.",
     "technologies": [
       "Python",
       "Flask",
-      "OpenAI API",
+      "OpenAI",
       "VirusTotal API",
       "HIBP API"
     ],
-    "shortDescription": "AI assistant for website analysis and cyber guidance."
+    "github": "https://github.com/Hanzala095/ai-cybersecurity-advisor"
   },
   {
     "id": 4,
+    "title": "Brand Sentiment Monitor",
+    "category": "Natural Language Processing",
+    "year": "2025",
+    "type": "NLP Project",
+    "team": "ITSOLERA",
+    "featured": false,
+    "image": "assets/projects/brand-sentiment.png",
+    "shortDescription": "Real-time social listening platform using sentiment analysis, NER and an interactive Streamlit dashboard.",
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "spaCy",
+      "Transformers"
+    ],
+    "github": "https://github.com/Hanzala095/brand-sentiment-monitor"
+  },
+  {
+    "id": 5,
+    "title": "Brain Tumor Segmentation",
+    "category": "Medical AI",
+    "year": "2025",
+    "type": "Deep Learning",
+    "team": "Personal Project",
+    "featured": false,
+    "image": "assets/projects/brain-tumor.png",
+    "shortDescription": "Deep learning system using U-Net architecture for automatic brain tumor segmentation from MRI scans.",
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "U-Net",
+      "Medical Imaging"
+    ],
+    "github": "https://github.com/Hanzala095/brain-tumor-segmentation-unet"
+  },
+  {
+    "id": 6,
+    "title": "Emotion-Based Music Recommendation",
+    "category": "Computer Vision",
+    "year": "2025",
+    "type": "Computer Vision",
+    "team": "ITSOLERA",
+    "featured": false,
+    "image": "assets/projects/emotion-music.png",
+    "shortDescription": "Real-time facial emotion recognition system recommending music according to detected emotions.",
+    "technologies": [
+      "Python",
+      "OpenCV",
+      "CNN",
+      "TensorFlow"
+    ],
+    "github": "https://github.com/Hanzala095/Emotion-Based-Music-Recommendation-System"
+  },
+  {
+    "id": 7,
     "title": "Ethereum Price Forecasting",
     "category": "Time Series Forecasting",
-    "type": "Internship",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
+    "type": "Machine Learning",
+    "team": "Arch Technologies",
     "featured": false,
-    "difficulty": "Intermediate",
-    "thumbnail": "ethereum-arima.png",
-    "github": "https://github.com/Hanzala095/Ethereum_ARIMA_Forecasting",
+    "image": "assets/projects/ethereum-arima.png",
+    "shortDescription": "Forecasting Ethereum prices using ARIMA models with preprocessing, visualization and evaluation.",
     "technologies": [
       "Python",
       "ARIMA",
       "Pandas",
-      "Statsmodels"
+      "Matplotlib"
     ],
-    "shortDescription": "Forecasting Ethereum prices using ARIMA."
-  },
-  {
-    "id": 5,
-    "title": "Emotion-Based Music Recommendation",
-    "category": "Computer Vision",
-    "type": "Internship",
-    "team": "International Team",
-    "year": "2025",
-    "status": "Completed",
-    "featured": true,
-    "difficulty": "Advanced",
-    "thumbnail": "emotion-music.png",
-    "github": "https://github.com/Hanzala095/Emotion-Based-Music-Recommendation-System",
-    "technologies": [
-      "TensorFlow",
-      "DeepFace",
-      "OpenCV",
-      "Tkinter",
-      "Pygame"
-    ],
-    "shortDescription": "Emotion detection with real-time music recommendation."
-  },
-  {
-    "id": 6,
-    "title": "Brain Tumor Segmentation",
-    "category": "Medical AI",
-    "type": "Internship",
-    "team": "Individual",
-    "year": "2025",
-    "status": "Completed",
-    "featured": false,
-    "difficulty": "Advanced",
-    "thumbnail": "brain-tumor.png",
-    "github": "https://github.com/Hanzala095/brain-tumor-segmentation-unet",
-    "technologies": [
-      "PyTorch",
-      "U-Net",
-      "Python"
-    ],
-    "shortDescription": "MRI brain tumor segmentation using U-Net."
-  },
-  {
-    "id": 7,
-    "title": "Brand Sentiment Monitor",
-    "category": "Natural Language Processing",
-    "type": "Internship",
-    "team": "International Team",
-    "year": "2025",
-    "status": "Completed",
-    "featured": false,
-    "difficulty": "Advanced",
-    "thumbnail": "brand-sentiment.png",
-    "github": "https://github.com/Hanzala095/brand-sentiment-monitor",
-    "technologies": [
-      "Python",
-      "Streamlit",
-      "NLP",
-      "NER"
-    ],
-    "shortDescription": "Real-time sentiment analysis dashboard."
+    "github": "https://github.com/Hanzala095/Ethereum_ARIMA_Forecasting"
   },
   {
     "id": 8,
-    "title": "Deep Temporal-Spatial Seizure Prediction",
+    "title": "Seizure Prediction",
     "category": "Medical AI",
-    "type": "Internship",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
-    "featured": true,
-    "difficulty": "Advanced",
-    "thumbnail": "seizure.png",
-    "github": "https://github.com/Hanzala095/deep_temporal_spatial_seizure_prediction.ipynb",
+    "type": "Deep Learning",
+    "team": "Arch Technologies",
+    "featured": false,
+    "image": "assets/projects/seizure.png",
+    "shortDescription": "Deep learning framework for temporal-spatial seizure prediction using EEG signals.",
     "technologies": [
-      "PyTorch",
-      "Transformer",
-      "CNN",
-      "LSTM"
+      "Python",
+      "TensorFlow",
+      "LSTM",
+      "EEG"
     ],
-    "shortDescription": "EEG-based seizure prediction using attention models."
+    "github": "https://github.com/Hanzala095/deep_temporal_spatial_seizure_prediction.ipynb"
   },
   {
     "id": 9,
     "title": "Breast Cancer Classification",
     "category": "Medical AI",
-    "type": "Academic",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
+    "type": "Machine Learning",
+    "team": "Arch Technologies",
     "featured": false,
-    "difficulty": "Advanced",
-    "thumbnail": "breast-cancer.png",
-    "github": "https://github.com/Hanzala095/Breast-cancer-classification-ml",
+    "image": "assets/projects/breast-cancer.png",
+    "shortDescription": "Machine learning model for classifying breast cancer tumors using diagnostic medical datasets.",
     "technologies": [
-      "Scikit-learn",
       "Python",
-      "SVM",
-      "GridSearchCV"
+      "Scikit-learn",
+      "Random Forest",
+      "Pandas"
     ],
-    "shortDescription": "ML pipeline for breast cancer diagnosis."
+    "github": "https://github.com/Hanzala095/Breast-cancer-classification-ml"
   },
   {
     "id": 10,
     "title": "HealthCheck Protocol",
     "category": "Networking",
-    "type": "Academic",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
+    "type": "Blockchain Healthcare",
+    "team": "Personal Project",
     "featured": false,
-    "difficulty": "Advanced",
-    "thumbnail": "hcp.png",
-    "github": "https://github.com/Hanzala095/HealthCheck_Protocol",
+    "image": "assets/projects/hcp.png",
+    "shortDescription": "Blockchain-powered healthcare verification platform for secure patient data sharing and authentication.",
     "technologies": [
+      "Blockchain",
       "Python",
-      "Sockets",
-      "JSON",
-      "psutil"
+      "Security",
+      "Healthcare"
     ],
-    "shortDescription": "Custom application-layer protocol for system monitoring."
+    "github": "https://github.com/Hanzala095/HealthCheck_Protocol"
   },
   {
     "id": 11,
     "title": "File Management System",
     "category": "Desktop Application",
-    "type": "Academic",
-    "team": "Individual",
     "year": "2025",
-    "status": "Completed",
+    "type": "Desktop GUI",
+    "team": "Personal Project",
     "featured": false,
-    "difficulty": "Intermediate",
-    "thumbnail": "file-management.png",
-    "github": "https://github.com/Hanzala095/file-management-gui",
+    "image": "assets/projects/file-management.png",
+    "shortDescription": "Desktop application for secure file organization, storage management and efficient document handling.",
     "technologies": [
       "Python",
-      "Tkinter"
+      "Tkinter",
+      "GUI",
+      "File System"
     ],
-    "shortDescription": "GUI-based file management application."
+    "github": "https://github.com/Hanzala095/file-management-gui"
   }
 ]

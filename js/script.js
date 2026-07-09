@@ -1,45 +1,60 @@
-const progressBar =
-document.getElementById("progress-bar");
+// ======================================
+// Scroll Progress Bar
+// ======================================
 
-window.addEventListener("scroll",()=>{
+const progressBar = document.getElementById("progress-bar");
 
-const totalHeight =
-document.documentElement.scrollHeight-window.innerHeight;
+if (progressBar) {
 
-const progress =
-(window.scrollY/totalHeight)*100;
+    window.addEventListener("scroll", () => {
 
-progressBar.style.width=
-progress+"%";
+        const totalHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
 
-});
-const topBtn =
-document.getElementById("topBtn");
+        const progress =
+            (window.scrollY / totalHeight) * 100;
 
-window.addEventListener("scroll",()=>{
+        progressBar.style.width = progress + "%";
 
-if(window.scrollY>500){
-
-topBtn.classList.add("show");
+    });
 
 }
 
-else{
 
-topBtn.classList.remove("show");
+// ======================================
+// Back To Top Button
+// ======================================
+
+const topBtn = document.getElementById("topBtn");
+
+if (topBtn) {
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 500) {
+
+            topBtn.classList.add("show");
+
+        }
+
+        else {
+
+            topBtn.classList.remove("show");
+
+        }
+
+    });
+
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    });
 
 }
-
-});
-
-topBtn.onclick=()=>{
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-};

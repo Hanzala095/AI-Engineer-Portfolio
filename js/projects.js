@@ -3,10 +3,114 @@ let allProjects = [];
 async function loadProjects() {
 
     const response = await fetch("data/projects.json");
-
     allProjects = await response.json();
 
+    displayFeaturedProject();
     displayProjects(allProjects);
+
+}
+
+function displayFeaturedProject() {
+
+    const featuredContainer = document.getElementById("featured-project");
+
+    if (!featuredContainer) return;
+
+    const featured = allProjects.find(project => project.featured);
+
+    if (!featured) return;
+
+    featuredContainer.innerHTML = `
+
+<div class="featured-card">
+
+    <div class="featured-image">
+
+        <img src="assets/projects/factory.png" alt="${featured.title}">
+
+    </div>
+
+    <div class="featured-content">
+
+        <span class="featured-label">
+
+⭐ Featured AI System
+
+</span>
+
+<div class="featured-meta">
+
+    <span>
+
+        <i class="fa-regular fa-calendar"></i>
+
+        ${featured.year}
+
+    </span>
+
+    <span>
+
+        <i class="fa-solid fa-building"></i>
+
+        ${featured.team}
+
+    </span>
+
+    <span>
+
+        <i class="fa-solid fa-microchip"></i>
+
+        ${featured.category}
+
+    </span>
+
+</div>
+
+<h2>${featured.title}</h2>
+
+        <p>${featured.shortDescription}</p>
+
+        <div class="project-tech">
+
+            ${featured.technologies.map(tech =>
+
+                `<span>${tech}</span>`
+
+            ).join("")}
+
+        </div>
+
+        <div class="project-buttons">
+
+            <a href="${featured.github}"
+
+target="_blank"
+
+class="github-btn">
+
+<i class="fa-brands fa-github"></i>
+
+Source Code
+
+</a>
+
+            <a href="pages/project-details.html?id=${featured.id}"
+
+               class="case-btn">
+
+                <i class="fa-solid fa-book-open"></i>
+
+Case Study
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
 
 }
 
@@ -22,77 +126,83 @@ function displayProjects(projects) {
 
 <div class="project-card">
 
-<div class="project-header">
+    <img
 
-<span class="project-category">
+        src="${project.image}"
 
-${project.category}
+        alt="${project.title}"
 
-</span>
+        class="project-thumbnail">
 
-<span class="project-year">
+    <div class="project-header">
 
-${project.year}
+        <span class="project-category">
 
-</span>
+            ${project.category}
 
-</div>
+        </span>
 
-${project.featured ?
+        <span class="project-year">
 
-`<span class="featured-badge">
+            ${project.year}
 
-⭐ Featured Project
+        </span>
 
-</span>`
+    </div>
 
-:""}
+    ${project.featured ?
 
-<h3>${project.title}</h3>
+    `<span class="featured-badge">
 
-<p>${project.shortDescription}</p>
+        ⭐ Featured
 
-<div class="project-tech">
+    </span>`
 
-${project.technologies.map(tech =>
+    : ""}
 
-`<span>${tech}</span>`
+    <h3>${project.title}</h3>
 
-).join("")}
+    <p>${project.shortDescription}</p>
 
-</div>
+    <div class="project-tech">
 
-<div class="project-meta">
+        ${project.technologies.map(tech =>
 
-<span>${project.type}</span>
+            `<span>${tech}</span>`
 
-<span>${project.team}</span>
+        ).join("")}
 
-</div>
+    </div>
 
-<div class="project-buttons">
+    <div class="project-meta">
 
-<a href="${project.github}"
+        <span>${project.type}</span>
 
-target="_blank"
+        <span>${project.team}</span>
 
-class="github-btn">
+    </div>
 
-Source Code
+    <div class="project-buttons">
 
-</a>
+        <a href="${project.github}"
 
-<a
+           target="_blank"
 
-href="pages/project-details.html?id=${project.id}"
+           class="github-btn">
 
-class="case-btn">
+            Source Code
 
-Case Study →
+        </a>
 
-</a>
+        <a href="pages/project-details.html?id=${project.id}"
 
-</div>
+           class="case-btn">
+
+            Case Study →
+
+        </a>
+
+    </div>
 
 </div>
 
