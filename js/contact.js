@@ -32,7 +32,7 @@ loadContact();
 // EmailJS Initialization
 // ======================================
 
-emailjs.init("5sOp_8xz-aMrw1sJc");
+emailjs.init("Me2ymjtlVy5Xrmq37");
 
 
 // ======================================
