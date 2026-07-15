@@ -42,15 +42,11 @@ gap:12px;
 
 .logo-icon{
 
-width:60px;
+width:45px;
 
-height:60px;
+height:45px;
 
-background:linear-gradient(
-135deg,
-#2563EB,
-#06B6D4
-);
+background:linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 
 display:flex;
 
@@ -58,38 +54,33 @@ justify-content:center;
 
 align-items:center;
 
-clip-path:polygon(
-25% 5%,
-75% 5%,
-100% 50%,
-75% 95%,
-25% 95%,
-0% 50%
-);
+border-radius: 12px;
 
 color:white;
 
-font-weight:700;
+font-weight:800;
 
-font-size:18px;
+font-size:15px;
 
-box-shadow:0 0 25px rgba(59,130,246,.35);
+box-shadow:0 0 20px rgba(139, 92, 246, 0.4);
 
 transition:.4s ease;
+
+border: 1px solid rgba(255,255,255,0.2);
 
 }
 
 .logo:hover .logo-icon{
 
-transform:rotate(8deg) scale(1.08);
+transform:rotate(10deg) scale(1.1);
 
-box-shadow:0 0 45px rgba(59,130,246,.55);
+box-shadow:0 0 30px rgba(139, 92, 246, 0.6);
 
 }
 
 .logo-text{
 
-font-size:20px;
+font-size:16px;
 
 font-weight:700;
 
@@ -97,13 +88,15 @@ color:var(--heading-color);
 
 font-family:var(--heading-font);
 
+white-space:nowrap;
+
 }
 
 .nav-links{
 
 display:flex;
 
-gap:35px;
+gap:12px;
 
 }
 
@@ -111,11 +104,15 @@ gap:35px;
 
 position:relative;
 
+font-size: 14px;
+
 font-weight:500;
 
 color:var(--text-color);
 
 transition:.35s;
+
+white-space:nowrap;
 
 }
 
@@ -164,7 +161,7 @@ width:100%;
 
 .resume-btn{
 
-padding:12px 28px;
+padding:10px 22px;
 
 background:var(--primary-color);
 
@@ -175,6 +172,10 @@ border-radius:50px;
 transition:var(--transition);
 
 font-weight:600;
+
+font-size:14px;
+
+white-space:nowrap;
 
 }
 
@@ -215,4 +216,35 @@ box-shadow:0 10px 35px rgba(0,0,0,.25);
 
 padding:14px 0;
 
+}
+/* Mobile Menu Dropdown */
+@media(max-width:992px){
+    .nav-links {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 8, 22, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 20px 0;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        transform: translateY(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s ease;
+        z-index: 1000;
+        text-align: center;
+        border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-btn { display: block !important; z-index: 1001; }
+    .resume-btn { display: none; }
+    .logo-text { display: none; }
 }

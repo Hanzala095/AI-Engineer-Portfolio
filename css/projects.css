@@ -71,7 +71,7 @@ gap:20px;
 
 transform:translateY(-10px);
 
-border-color:#3B82F6;
+border-color:var(--primary-color);
 
 box-shadow:0 20px 50px rgba(37,99,235,.25);
 
@@ -89,7 +89,7 @@ align-items:center;
 
 .project-category{
 
-color:#3B82F6;
+color:var(--primary-color);
 
 font-weight:600;
 

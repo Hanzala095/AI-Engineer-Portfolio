@@ -162,7 +162,7 @@ color:white;
 
 .resume-profile h4{
 
-color:#60A5FA;
+color:var(--accent-color);
 
 margin-bottom:18px;
 

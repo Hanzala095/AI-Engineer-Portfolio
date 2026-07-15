@@ -10,9 +10,9 @@
     COLORS
 ==========================*/
 
---primary-color:#3B82F6;
---secondary-color:#06B6D4;
---accent-color:#60A5FA;
+--primary-color:#8B5CF6;
+--secondary-color:#D946EF;
+--accent-color:#C084FC;
 
 /*=========================
     BACKGROUND
@@ -40,7 +40,7 @@
     SHADOW
 ==========================*/
 
---box-shadow:0 0 35px rgba(59,130,246,.18);
+--box-shadow:0 0 35px rgba(139,92,246,.18);
 
 /*=========================
     BORDER RADIUS
@@ -62,3 +62,9 @@
 --body-font:'Inter',sans-serif;
 
 }
+/*=========================
+    GLASSMORPHISM
+==========================*/
+--glass-bg: rgba(17, 24, 39, 0.45);
+--glass-border: 1px solid rgba(255, 255, 255, 0.05);
+--glass-blur: blur(16px);

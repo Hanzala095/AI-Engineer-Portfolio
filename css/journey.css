@@ -80,13 +80,13 @@ transition:.4s;
 
 transform:translateY(-6px);
 
-border-color:#3B82F6;
+border-color:var(--primary-color);
 
 }
 
 .timeline-year{
 
-color:#3B82F6;
+color:var(--primary-color);
 
 font-weight:700;
 

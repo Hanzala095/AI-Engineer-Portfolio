@@ -58,7 +58,7 @@ width:450px;
 
 height:450px;
 
-background:#06B6D4;
+background:var(--secondary-color);
 
 border-radius:50%;
 

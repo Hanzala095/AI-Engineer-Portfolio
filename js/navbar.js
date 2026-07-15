@@ -49,3 +49,15 @@ link.classList.add("active");
 });
 
 });
+const menuBtn = document.querySelector('.menu-btn');
+const navLinksContainer = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('active');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('active');
+    });
+});

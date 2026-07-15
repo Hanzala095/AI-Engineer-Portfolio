@@ -60,7 +60,7 @@ padding-bottom:8px;
 
 padding:0 20px;
 
-color:#3B82F6;
+color:var(--primary-color);
 
 font-weight:600;
 

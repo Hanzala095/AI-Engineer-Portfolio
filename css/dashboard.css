@@ -48,7 +48,7 @@ border-color:#2563EB;
 
 font-size:48px;
 
-color:#3B82F6;
+color:var(--primary-color);
 
 margin-bottom:12px;
 
