@@ -166,6 +166,16 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   const toastTitle = document.getElementById('toastTitle');
   const toastMessage = document.getElementById('toastMessage');
 
+  // time-trap: record when the form first became visible/usable
+  const formLoadedAt = Date.now();
+
+  // simple math human-check, generated fresh on page load
+  const a = Math.floor(Math.random() * 8) + 1;
+  const b = Math.floor(Math.random() * 8) + 1;
+  const expectedAnswer = a + b;
+  const checkLabel = document.getElementById('cf-check-label');
+  if (checkLabel) checkLabel.textContent = `Quick check: what is ${a} + ${b}?`;
+
   function showToast(title, message, success = true) {
     toastTitle.textContent = title;
     toastMessage.textContent = message;
@@ -178,19 +188,26 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // honeypot
+    // honeypot — bots fill every field, humans never see this one
     if (document.getElementById('cf-website').value !== '') return;
+
+    // time-trap — real people take at least a couple seconds to fill a form
+    if (Date.now() - formLoadedAt < 2500) {
+      return showToast('Hold on', 'Please take a moment to fill out the form.', false);
+    }
 
     const fromName = document.getElementById('cf-name').value.trim();
     const fromEmail = document.getElementById('cf-email').value.trim();
     const subject = document.getElementById('cf-subject').value.trim();
     const message = document.getElementById('cf-message').value.trim();
+    const checkAnswer = document.getElementById('cf-check').value.trim();
 
     if (fromName.length < 2) return showToast('Invalid Name', 'Please enter your full name.', false);
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(fromEmail)) return showToast('Invalid Email', 'Please enter a valid email address.', false);
     if (subject.length < 3) return showToast('Invalid Subject', 'Please enter a subject.', false);
     if (message.length < 10) return showToast('Message Too Short', 'Message should contain at least 10 characters.', false);
+    if (parseInt(checkAnswer, 10) !== expectedAnswer) return showToast('Check Failed', 'That answer isn\'t quite right — please try again.', false);
 
     const originalHTML = button.innerHTML;
     button.disabled = true;
