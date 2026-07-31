@@ -1,849 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Hanzala Khan — AI Engineer</title>
+<meta name="description" content="AI Engineer specializing in Computer Vision, NLP and Medical AI. BS Artificial Intelligence student at PAF-IAST.">
 
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <title>
-        Muhammad Hanzala Khan | AI Engineer & Research Portfolio
-    </title>
-
-    <!-- Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="css/navbar.css">
-
-    <link rel="stylesheet" href="css/hero.css">
-
-    <link rel="stylesheet" href="css/background.css">
-
-    <link rel="stylesheet" href="css/about.css">
-
-    <link rel="stylesheet" href="css/education.css">
-
-    <link rel="stylesheet" href="css/research.css">
-
-    <link rel="stylesheet" href="css/skills.css">
-
-    <link rel="stylesheet" href="css/featured.css">
-
-    <link rel="stylesheet" href="css/dashboard.css">
-
-    <link rel="stylesheet" href="css/journey.css">
-
-    <link rel="stylesheet" href="css/projects.css">
-
-    <link rel="stylesheet" href="css/certificates.css">
-
-    <link rel="stylesheet" href="css/contact.css">
-
-    <link rel="stylesheet" href="css/footer.css">
-
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <link rel="stylesheet" href="css/animations.css">
-
-    <link rel="stylesheet" href="css/responsive.css">
-
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/nav-hero.css">
+<link rel="stylesheet" href="css/sections-1.css">
+<link rel="stylesheet" href="css/sections-2.css">
+<link rel="stylesheet" href="css/contact-footer-responsive.css">
 </head>
-<button id="topBtn">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
 <body>
-
-<!-- ==========================
-        HEADER
-=========================== -->
+<div class="aurora"><span></span><span></span><span></span></div>
 
 <header class="header">
+  <div class="container navbar">
+    <a href="#home" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+          <circle cx="12" cy="12" r="7.2" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="2.3" fill="currentColor"/>
+          <path d="M2.5 12h3.6M17.9 12h3.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-name">
+        <span class="logo-full">Muhammad Hanzala Khan</span>
+        <span class="logo-short">Hanzala Khan</span>
+        <span class="logo-sub">AI Engineer</span>
+      </div>
+    </a>
 
-    <div class="container">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-        <nav class="navbar">
-
-            <a href="#" class="logo">
-
-                <div class="logo-icon">
-
-                    <span>MHK</span>
-
-                </div>
-
-                <div class="logo-text">
-
-                    Muhammad Hanzala Khan
-
-                </div>
-
-            </a>
-
-            <ul class="nav-links">
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#education">Education</a></li>
-
-                <li><a href="#research">Research</a></li>
-
-                <li><a href="#skills">Skills</a></li>
-
-                <li><a href="#journey">Experience</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#certificates">Certificates</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-            <a href="pages/resume.html" class="resume-btn">
-    Resume
-</a>
-
-            <div class="menu-btn">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
-
-        </nav>
-
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <a href="assets/resume/Muhammad_Hanzala_Khan_Resume.pdf" target="_blank" class="btn btn-ghost" style="padding:10px 18px;">Resume</a>
+      <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
     </div>
-
+  </div>
 </header>
 
-<!-- ==========================
-        MAIN
-=========================== -->
-
-<main>
-
-<!-- ==========================
-        HERO
-=========================== -->
-
-<section id="home" class="hero">
-
-    <div id="particles-js"></div>
-
-    <div class="hero-background">
-
-        <span class="gradient-one"></span>
-
-        <span class="gradient-two"></span>
-
-        <span class="gradient-three"></span>
-
-    </div>
-
-    <div class="container hero-container">
-
-        <div class="hero-content">
-
-            <p class="hero-intro">
-
-                Hi, I'm
-
-            </p>
-
-            <h1>
-
-                Muhammad <br>
-
-                Hanzala Khan
-
-            </h1>
-
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-                <div class="terminal-body">
-                    <h2>
-                        <span id="typing"></span>
-                    </h2>
-                </div>
-            </div>
-
-            <p class="hero-description">
-
-                Building intelligent, ethical, and human-centered AI solutions through research, innovation, and real-world applications.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="primary-btn">
-
-                    View My Work
-
-                </a>
-
-                <a href="pages/resume.html" class="secondary-btn">
-    Resume
-</a>
-
-           
-
-        <div class="hero-image">
-
-            <img src="assets/profile/profile.png"
-                alt="Muhammad Hanzala Khan">
-
-        </div>
-
-    </div>
-
-</section>
-<section id="about" class="about reveal">
-
-<div class="container">
-
-<div class="about-grid">
-
-<div class="about-left">
-
-<h2>
-
-About Me
-
-</h2>
-
-<p id="about-description">
-
-</p>
-
-</div>
-
-<div class="about-right">
-
-<div class="about-card">
-
-<h3>
-
-Quick Facts
-
-</h3>
-
-<ul>
-
-<li>
-
-📍 <span id="about-location"></span>
-
-</li>
-
-<li>
-
-🎓 <span id="about-degree"></span>
-
-</li>
-
-<li>
-
-🏛️ <span id="about-university"></span>
-
-</li>
-
-<li>
-
-💼 <span id="about-internships"></span> Internships
-
-</li>
-
-<li>
-
-🤖 <span id="about-projects"></span> AI Systems
-
-</li>
-
-<li>
-
-🌍 <span id="about-availability"></span>
-
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<section id="education" class="education reveal">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Education & Learning</h2>
-
-<p>
-
-Academic foundation that supports my journey in Artificial Intelligence and Software Engineering.
-
-</p>
-
-</div>
-
-<div id="education-container" class="education-grid">
-
-</div>
-
-</div>
-
-</section>
-<section id="research" class="research reveal">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-
-Research Interests
-
-</h2>
-
-<p>
-
-Research areas I am passionate about exploring and applying through Artificial Intelligence.
-
-</p>
-
-</div>
-
-<div id="research-grid" class="research-grid">
-
-</div>
-
-</div>
-
-</section>
-<section id="skills" class="skills reveal">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Skills & Technology Stack</h2>
-
-            <p>
-
-                Technologies, frameworks and tools I use to build intelligent software solutions.
-
-            </p>
-
-        </div>
-
-        <div id="skills-container" class="skills-grid">
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ==========================
-    FEATURED PROJECT
-=========================== -->
-
-<section class="featured-project reveal-left">
-
-    <div class="container">
-
-        <div id="featured-project">
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ==========================
-        DASHBOARD
-=========================== -->
-
-<section class="dashboard reveal">
-
-    <div class="container">
-
-        <div class="dashboard-grid">
-
-            <div class="dashboard-card">
-
-                <h2 id="project-count">0</h2>
-
-                <p>AI Systems</p>
-
-            </div>
-
-            <div class="dashboard-card">
-
-                <h2 id="experience-count">0</h2>
-
-                <p>Internships</p>
-
-            </div>
-
-            <div class="dashboard-card">
-
-                <h2 id="skill-count">0</h2>
-
-                <p>Technologies</p>
-
-            </div>
-
-            <div class="dashboard-card">
-
-                <h2>🟢</h2>
-
-                <p>Open to AI Opportunities</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ==========================
-        JOURNEY
-=========================== -->
-
-<section id="journey" class="journey reveal-right">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Experience</h2>
-
-            <p>
-
-                A timeline of my education, internships, projects and continuous growth in Artificial Intelligence.
-
-            </p>
-
-        </div>
-
-        <div class="timeline">
-
-            <div id="timeline-container">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ==========================
-        PROJECTS
-=========================== -->
-
-<section id="projects" class="projects reveal">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>AI Systems & Applications</h2>
-
-            <p>
-
-                Real-world AI, Machine Learning and Full Stack solutions developed during academic and internship projects.
-
-            </p>
-
-        </div>
-
-        <div class="project-controls">
-
-            <input
-                type="text"
-                id="search-project"
-                placeholder="🔍 Search AI Systems...">
-
-            <div class="filter-buttons">
-
-                <button class="filter-btn active" data-filter="All">
-
-All
-
-</button>
-
-<button class="filter-btn"
-
-data-filter="Computer Vision">
-
-Computer Vision
-
-</button>
-
-<button class="filter-btn"
-
-data-filter="Medical AI">
-
-Medical AI
-
-</button>
-
-<button class="filter-btn"
-
-data-filter="Natural Language Processing">
-
-NLP
-
-</button>
-
-<button class="filter-btn"
-
-data-filter="Cybersecurity">
-
-Cybersecurity
-
-</button>
-
-<button class="filter-btn"
-
-data-filter="Networking">
-
-Networking
-
-</button>
-
-<button class="filter-btn"
-
-data-filter="Full Stack">
-
-Full Stack
-
-</button>
-
-            </div>
-
-        </div>
-
-        <div id="project-grid" class="project-grid">
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="certificates" class="certificates reveal">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-
-Professional Certifications
-
-</h2>
-
-<p>
-
-Continuous learning through professional certifications and online courses.
-
-</p>
-
-</div>
-
-<div id="certificate-grid" class="certificate-grid">
-
-</div>
-
-</div>
-
-</section>
-<section id="contact" class="contact reveal">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Let's Connect</h2>
-
-<p>
-
-Interested in collaborating, discussing AI, or internship opportunities? I'd love to hear from you.
-
-</p>
-
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info">
-
-<h3>Contact Information</h3>
-
-<p>
-
-<i class="fa-solid fa-envelope"></i>
-
-<span id="contact-email"></span>
-
-</p>
-
-<p>
-
-<i class="fa-solid fa-location-dot"></i>
-
-<span id="contact-location"></span>
-
-</p>
-
-<div class="contact-socials">
-
-<a id="linkedin-link" target="_blank">
-    <span><i class="fab fa-linkedin"></i> LinkedIn</span>
-    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-</a>
-
-<a id="github-link" target="_blank">
-    <span><i class="fab fa-github"></i> GitHub</span>
-    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-</a>
-
-</div>
-
-</div>
-
-<div class="contact-form">
-
-<form id="contact-form">
-
-<input
-type="text"
-id="from_name"
-name="from_name"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-id="from_email"
-name="from_email"
-placeholder="Your Email"
-required>
-
-<input
-type="text"
-id="subject"
-name="subject"
-placeholder="Subject"
-required>
-
-<!-- Honeypot (Hidden Anti-Spam Field) -->
-<input
-type="text"
-id="website"
-name="website"
-style="display:none;">
-
-<textarea
-id="message"
-name="message"
-rows="6"
-placeholder="Message"
-required></textarea>
-
-<button
-type="submit"
-id="send-btn"
-class="primary-btn">
-
-<i class="fa-solid fa-paper-plane"></i>
-
-<span>Send Message</span>
-
-</button>
-
-
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<footer class="footer">
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h2>
-
-Muhammad Hanzala Khan
-
-</h2>
-
-<p>
-
-AI Engineer • Machine Learning Enthusiast
-
-</p>
-
-<p>
-
-📍 Wah Cantt, Pakistan
-
-</p>
-
-</div>
-
-<div>
-
-<h3>
-
-Quick Links
-
-</h3>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#journey">Experience</a></li>
-
-<li><a href="#research">Research</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h3>
-
-Connect
-
-</h3>
-
-<a href="https://github.com/Hanzala095" target="_blank">
-
-GitHub
-
-</a>
-
-<br><br>
-
-<a href="https://www.linkedin.com/in/muhammad-hanzala-khan-4081492b7" target="_blank">
-
-LinkedIn
-
-</a>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-
-© 2026 Muhammad Hanzala Khan
-
-|
-
-Built with HTML • CSS • JavaScript
-
-</div>
-
-</div>
-
-</footer>
-</main>
-
-<!-- ==========================
-        JAVASCRIPT
-=========================== -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-<script src="js/particles-config.js"></script>
-
-<script src="js/navbar.js"></script>
-
-<script src="js/script.js"></script>
-
-<script src="js/typing.js"></script>
-
-<script src="js/about.js"></script>
-
-<script src="js/education.js"></script>
-
-<script src="js/research.js"></script>
-
-<script src="js/skills.js"></script>
-
-<script src="js/certificates.js"></script>
-
-<script src="js/contact.js"></script>
-
-<script src="js/dashboard.js"></script>
-
-<script src="js/projects.js"></script>
-
-<script src="js/journey.js"></script>
-
-<script src="js/filter.js"></script>
-
-<script src="js/scrollReveal.js"></script>
-
-<script src="js/scroll-animation.js"></script>
-<div id="toast" class="toast">
-
-    <i id="toast-icon" class="fa-solid fa-circle-check"></i>
-
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" style="border-bottom:none;">
+  <div class="container hero-grid">
     <div>
-
-        <h4 id="toast-title">Success</h4>
-
-        <p id="toast-message"></p>
-
+      <div class="hero-status"><span class="dot"></span> Open for AI Internship Opportunities</div>
+      <h1>
+        <span class="line">Muhammad Hanzala Khan —</span>
+        <span class="line">AI systems that <span class="accent">see, read &amp; diagnose.</span></span>
+      </h1>
+      <p class="hero-role mono">&gt; <span id="typeWord">Computer Vision Engineer</span><span class="type-cursor"></span></p>
+      <p class="hero-desc">
+        BS Artificial Intelligence student at PAF-IAST building practical AI across
+        Computer Vision, NLP, Healthcare AI and Cybersecurity — turned into working
+        prototypes, not just notebooks.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="num" data-count="3">0</span><span class="lbl">Internships</span></div>
+        <div><span class="num" data-count="11" data-suffix="+">0</span><span class="lbl">AI Projects</span></div>
+        <div><span class="num" data-count="3">0</span><span class="lbl">Certifications</span></div>
+        <div><span class="num" data-count="6">0</span><span class="lbl">Focus Areas</span></div>
+      </div>
     </div>
 
+    <div class="viewport bracket">
+      <span class="bl"></span><span class="br"></span>
+      <div class="viewport-frame">
+        <img src="assets/profile/profile.png" alt="Muhammad Hanzala Khan">
+      </div>
+      <div class="viewport-badge"><span class="dot"></span> Open to Work</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll"><span class="bar"></span> Scroll</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="eyebrow">About</span>
+        <h2 style="font-size:clamp(26px,3.4vw,36px);margin-bottom:0;">Hi, I'm Hanzala.</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p>I am a BS Artificial Intelligence student at Pak-Austria Fachhochschule Institute of Applied Sciences and Technology (PAF-IAST), passionate about building practical AI solutions in Computer Vision, Natural Language Processing, Healthcare AI and Cybersecurity.</p>
+        <p>Through internships and academic projects, I've developed intelligent systems that solve real-world problems, while continuously expanding my skills across AI and software engineering.</p>
+
+        <div class="readout" style="margin-top:30px;">
+          <div class="readout-row"><span class="k">Location</span><span class="v">Wah Cantt, Pakistan</span></div>
+          <div class="readout-row"><span class="k">Degree</span><span class="v">BS Artificial Intelligence</span></div>
+          <div class="readout-row"><span class="k">University</span><span class="v">PAF-IAST</span></div>
+          <div class="readout-row"><span class="k">Internships</span><span class="v">3 completed</span></div>
+          <div class="readout-row"><span class="k">Projects Shipped</span><span class="v">11+</span></div>
+          <div class="readout-row"><span class="k">Availability</span><span class="v tag-open">● Open for AI Internships</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section id="journey">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Journey</span>
+      <h2>How I got here</h2>
+      <p>A timeline of the internships, milestones and turning points that shaped my path into applied AI.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="t-item reveal">
+        <span class="t-year">2023</span>
+        <h3>Started BS Artificial Intelligence</h3>
+        <div class="t-org">PAF-IAST, Haripur</div>
+        <p>Built a strong foundation in programming, mathematics, data structures, machine learning and artificial intelligence.</p>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-year">Summer 2024</span>
+        <h3>POF Internship</h3>
+        <div class="t-org">Pakistan Ordnance Factories (POF)</div>
+        <p>Gained industrial exposure, professional work experience and practical understanding of engineering and organizational operations.</p>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-year">Summer 2025</span>
+        <h3>Friend of Police Internship</h3>
+        <div class="t-org">Rawalpindi Police</div>
+        <p>Strengthened leadership, teamwork, discipline, communication and community engagement skills.</p>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-year">Summer 2025</span>
+        <h3>Machine Learning Intern</h3>
+        <div class="t-org">Arch Technologies</div>
+        <p>Worked on Machine Learning and Time Series Forecasting and Medical AI projects, including Brain Tumor Segmentation and Ethereum Price Forecasting.</p>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-year">Summer 2025</span>
+        <h3>AI &amp; Deep Learning Intern</h3>
+        <div class="t-org">ITSOLERA PVT LTD</div>
+        <p>Collaborated with an international team on Computer Vision, NLP and Deep Learning projects, including Emotion-Based Music Recommendation, Brand Sentiment Monitor and Seizure Prediction.</p>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-year">2025 – 2026</span>
+        <h3>Developed 11+ AI Systems</h3>
+        <div class="t-org">Academic &amp; Personal Projects</div>
+        <p>Designed and built AI systems across Computer Vision, NLP, Medical AI, Cybersecurity, Networking and Full Stack Development.</p>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-year">2026</span>
+        <h3>Open to AI Internship Opportunities</h3>
+        <div class="t-org">Career Goal</div>
+        <p>Actively seeking internships in Artificial Intelligence, Machine Learning, Computer Vision, Generative AI and Data Science to contribute to impactful real-world projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've worked</h2>
+      <p>Internships spanning applied machine learning, community engagement and full-time coursework.</p>
+    </div>
+
+    <div class="exp-list">
+      <div class="exp-row reveal">
+        <div class="exp-role">
+          <h3>Machine Learning &amp; AI Intern</h3>
+          <div class="exp-org">ITSOLERA PVT LTD · Remote</div>
+          <span class="exp-type">Internship</span>
+        </div>
+        <ul class="exp-highlights">
+          <li>Built NLP, Computer Vision and Deep Learning projects.</li>
+          <li>Worked in an international team with members from Egypt.</li>
+          <li>Developed Brand Sentiment Monitor, Emotion-Based Music Recommendation and Seizure Prediction System.</li>
+        </ul>
+      </div>
+      <div class="exp-row reveal">
+        <div class="exp-role">
+          <h3>Machine Learning Intern</h3>
+          <div class="exp-org">Arch Technologies · Remote</div>
+          <span class="exp-type">Internship</span>
+        </div>
+        <ul class="exp-highlights">
+          <li>Developed Ethereum Price Forecasting using ARIMA.</li>
+          <li>Built Brain Tumor Segmentation using U-Net.</li>
+          <li>Worked on end-to-end Machine Learning workflows.</li>
+        </ul>
+      </div>
+      <div class="exp-row reveal">
+        <div class="exp-role">
+          <h3>Friend of Police Intern</h3>
+          <div class="exp-org">Rawalpindi Police · Rawalpindi, Pakistan</div>
+          <span class="exp-type">Internship</span>
+        </div>
+        <ul class="exp-highlights">
+          <li>Participated in community engagement activities.</li>
+          <li>Supported public awareness initiatives.</li>
+          <li>Developed teamwork, leadership and communication skills.</li>
+        </ul>
+      </div>
+      <div class="exp-row reveal">
+        <div class="exp-role">
+          <h3>BS Artificial Intelligence Student</h3>
+          <div class="exp-org">PAF-IAST · Haripur, Pakistan</div>
+          <span class="exp-type">Education</span>
+        </div>
+        <ul class="exp-highlights">
+          <li>Built multiple AI, Machine Learning, Computer Vision and Networking projects.</li>
+          <li>Research interests include NLP, Human-Centered AI and Computer Vision.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Skills</span>
+      <h2>Tools of the trade</h2>
+      <p>The languages, frameworks and tools I use to take an AI idea from notebook to working product.</p>
+    </div>
+
+    <div class="skills-grid stagger">
+      <div class="skill-cat">
+        <h3>Programming</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>C++</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Artificial Intelligence</h3>
+        <div class="skill-tags">
+          <span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>NLP</span><span>Generative AI</span><span>Explainable AI (XAI)</span><span>Federated Learning</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Frameworks &amp; Libraries</h3>
+        <div class="skill-tags">
+          <span>TensorFlow</span><span>PyTorch</span><span>OpenCV</span><span>Scikit-learn</span><span>Flask</span><span>Streamlit</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h3>Databases &amp; Tools</h3>
+        <div class="skill-tags">
+          <span>MySQL</span><span>Git</span><span>GitHub</span><span>Linux</span><span>Google Colab</span><span>VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Projects</span>
+      <h2>Selected work</h2>
+      <p>11 projects spanning computer vision, medical AI, NLP, cybersecurity and full-stack development.</p>
+    </div>
+
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
+      <button class="filter-btn" data-filter="Medical AI">Medical AI</button>
+      <button class="filter-btn" data-filter="Natural Language Processing">NLP</button>
+      <button class="filter-btn" data-filter="Cybersecurity">Cybersecurity</button>
+      <button class="filter-btn" data-filter="Full Stack">Full Stack</button>
+      <button class="filter-btn" data-filter="Time Series Forecasting">Forecasting</button>
+      <button class="filter-btn" data-filter="Networking">Networking</button>
+      <button class="filter-btn" data-filter="Desktop Application">Desktop</button>
+    </div>
+
+    <div class="projects-grid stagger" id="projectsGrid">
+
+      <div class="project-card" data-category="Computer Vision">
+        <div class="project-thumb"><span class="badge">Featured</span><img src="assets/projects/factory-compliance.png" alt="Factory Compliance Monitoring System"></div>
+        <div class="project-body">
+          <span class="project-cat">Computer Vision · 2025</span>
+          <h3>Factory Compliance Monitoring System</h3>
+          <p>AI-powered workplace safety monitoring system using Computer Vision, TensorFlow and policy-based compliance detection.</p>
+          <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>Flask</span><span>MobileNetV2</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/Genesys_AI_Assessment" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Full Stack">
+        <div class="project-thumb"><img src="assets/projects/scholarship-finder.png" alt="Scholarship Finder System"></div>
+        <div class="project-body">
+          <span class="project-cat">Full Stack · 2025</span>
+          <h3>Scholarship Finder System</h3>
+          <p>Flask-based platform that scrapes scholarship websites, stores data in MySQL and sends automated reminder emails.</p>
+          <div class="project-tech"><span>Python</span><span>Flask</span><span>MySQL</span><span>BeautifulSoup</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/ScholarshipFinder" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Cybersecurity">
+        <div class="project-thumb"><img src="assets/projects/cybersecurity-advisor.png" alt="AI Cybersecurity Advisor"></div>
+        <div class="project-body">
+          <span class="project-cat">Cybersecurity · 2025</span>
+          <h3>AI Cybersecurity Advisor</h3>
+          <p>AI cybersecurity assistant integrating GPT, VirusTotal and Have I Been Pwned APIs for cyber awareness.</p>
+          <div class="project-tech"><span>Python</span><span>Flask</span><span>OpenAI</span><span>VirusTotal API</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/ai-cybersecurity-advisor" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Natural Language Processing">
+        <div class="project-thumb"><img src="assets/projects/brand-sentiment.png" alt="Brand Sentiment Monitor"></div>
+        <div class="project-body">
+          <span class="project-cat">NLP · 2025</span>
+          <h3>Brand Sentiment Monitor</h3>
+          <p>Real-time social listening platform using sentiment analysis, NER and an interactive Streamlit dashboard.</p>
+          <div class="project-tech"><span>Python</span><span>Streamlit</span><span>spaCy</span><span>Transformers</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/brand-sentiment-monitor" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Medical AI">
+        <div class="project-thumb"><img src="assets/projects/brain-tumor.png" alt="Brain Tumor Segmentation"></div>
+        <div class="project-body">
+          <span class="project-cat">Medical AI · 2025</span>
+          <h3>Brain Tumor Segmentation</h3>
+          <p>Deep learning system using U-Net architecture for automatic brain tumor segmentation from MRI scans.</p>
+          <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>U-Net</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/brain-tumor-segmentation-unet" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Computer Vision">
+        <div class="project-thumb"><img src="assets/projects/emotion-music.png" alt="Emotion-Based Music Recommendation"></div>
+        <div class="project-body">
+          <span class="project-cat">Computer Vision · 2025</span>
+          <h3>Emotion-Based Music Recommendation</h3>
+          <p>Real-time facial emotion recognition system recommending music according to detected emotions.</p>
+          <div class="project-tech"><span>Python</span><span>OpenCV</span><span>CNN</span><span>TensorFlow</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/Emotion-Based-Music-Recommendation-System" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Time Series Forecasting">
+        <div class="project-thumb"><img src="assets/projects/ethereum-arima.png" alt="Ethereum Price Forecasting"></div>
+        <div class="project-body">
+          <span class="project-cat">Time Series · 2025</span>
+          <h3>Ethereum Price Forecasting</h3>
+          <p>Forecasting Ethereum prices using ARIMA models with preprocessing, visualization and evaluation.</p>
+          <div class="project-tech"><span>Python</span><span>ARIMA</span><span>Pandas</span><span>Matplotlib</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/Ethereum_ARIMA_Forecasting" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Medical AI">
+        <div class="project-thumb"><img src="assets/projects/seizure.png" alt="Seizure Prediction"></div>
+        <div class="project-body">
+          <span class="project-cat">Medical AI · 2025</span>
+          <h3>Seizure Prediction</h3>
+          <p>Deep learning framework for temporal-spatial seizure prediction using EEG signals.</p>
+          <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>LSTM</span><span>EEG</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/deep_temporal_spatial_seizure_prediction.ipynb" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Medical AI">
+        <div class="project-thumb"><img src="assets/projects/breast-cancer.png" alt="Breast Cancer Classification"></div>
+        <div class="project-body">
+          <span class="project-cat">Medical AI · 2025</span>
+          <h3>Breast Cancer Classification</h3>
+          <p>Machine learning model for classifying breast cancer tumors using diagnostic medical datasets.</p>
+          <div class="project-tech"><span>Python</span><span>Scikit-learn</span><span>Random Forest</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/Breast-cancer-classification-ml" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Networking">
+        <div class="project-thumb"><img src="assets/projects/hcp.png" alt="HealthCheck Protocol"></div>
+        <div class="project-body">
+          <span class="project-cat">Networking · 2025</span>
+          <h3>HealthCheck Protocol</h3>
+          <p>Blockchain-powered healthcare verification platform for secure patient data sharing and authentication.</p>
+          <div class="project-tech"><span>Blockchain</span><span>Python</span><span>Security</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/HealthCheck_Protocol" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="Desktop Application">
+        <div class="project-thumb"><img src="assets/projects/file-management.png" alt="File Management System"></div>
+        <div class="project-body">
+          <span class="project-cat">Desktop · 2025</span>
+          <h3>File Management System</h3>
+          <p>Desktop application for secure file organization, storage management and efficient document handling.</p>
+          <div class="project-tech"><span>Python</span><span>Tkinter</span><span>GUI</span></div>
+          <div class="project-links"><a href="https://github.com/Hanzala095/file-management-gui" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Certificates</span>
+      <h2>Verified learning</h2>
+      <p>Professional certifications backing up the fundamentals.</p>
+    </div>
+
+    <div class="cert-grid stagger">
+      <div class="cert-card">
+        <div class="cert-thumb"><img src="assets/certificates/images/google-cybersecurity.png" alt="Google Cybersecurity Professional Certificate"></div>
+        <div class="cert-body">
+          <span class="cert-date">July 2024</span>
+          <h3>Google Cybersecurity Professional Certificate</h3>
+          <div class="cert-issuer">Google</div>
+          <div class="cert-skills"><span>Python</span><span>Linux</span><span>SQL</span><span>SIEM</span><span>IDS</span></div>
+          <a class="cert-link" href="assets/certificates/pdf/google-cybersecurity.pdf" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-thumb"><img src="assets/certificates/images/ai-for-everyone.png" alt="AI For Everyone"></div>
+        <div class="cert-body">
+          <span class="cert-date">July 2025</span>
+          <h3>AI For Everyone</h3>
+          <div class="cert-issuer">DeepLearning.AI</div>
+          <div class="cert-skills"><span>AI Fundamentals</span><span>Machine Learning</span><span>AI Strategy</span></div>
+          <a class="cert-link" href="assets/certificates/pdf/ai-for-everyone.pdf" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-thumb"><img src="assets/certificates/images/supervised-ml.png" alt="Supervised Machine Learning"></div>
+        <div class="cert-body">
+          <span class="cert-date">October 2025</span>
+          <h3>Supervised Machine Learning: Regression and Classification</h3>
+          <div class="cert-issuer">DeepLearning.AI &amp; Stanford University</div>
+          <div class="cert-skills"><span>Regression</span><span>Classification</span><span>Scikit-learn</span></div>
+          <a class="cert-link" href="assets/certificates/pdf/supervised-ml.pdf" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Education</span>
+      <h2>Academic background</h2>
+    </div>
+
+    <div class="edu-list">
+      <div class="edu-row reveal">
+        <span class="t-year mono">2023 – Present</span>
+        <div>
+          <h3>BS Artificial Intelligence</h3>
+          <div class="edu-inst">Pak-Austria Fachhochschule Institute of Applied Sciences and Technology (PAF-IAST) · HEC</div>
+        </div>
+        <span class="edu-loc">Haripur, Pakistan</span>
+      </div>
+      <div class="edu-row reveal">
+        <span class="t-year mono">2021 – 2023</span>
+        <div>
+          <h3>FSc Pre-Engineering</h3>
+          <div class="edu-inst">Base Group of Colleges · FBISE</div>
+        </div>
+        <span class="edu-loc">Wah Cantt, Pakistan</span>
+      </div>
+      <div class="edu-row reveal">
+        <span class="t-year mono">2019 – 2021</span>
+        <div>
+          <h3>Matriculation</h3>
+          <div class="edu-inst">Sir Syed School &amp; College Campus-IV · FBISE</div>
+        </div>
+        <span class="edu-loc">Wah Cantt, Pakistan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH INTERESTS ============ -->
+<section id="research">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Research Interests</span>
+      <h2>What I'm exploring</h2>
+    </div>
+
+    <div class="research-grid stagger">
+      <div class="research-card"><div class="research-icon"><i class="fa-solid fa-eye"></i></div><h3>Computer Vision</h3><p>Developing intelligent visual systems for safety, healthcare and industrial automation.</p></div>
+      <div class="research-card"><div class="research-icon"><i class="fa-solid fa-brain"></i></div><h3>Machine Learning</h3><p>Building predictive models and intelligent decision-making systems.</p></div>
+      <div class="research-card"><div class="research-icon"><i class="fa-solid fa-comments"></i></div><h3>Natural Language Processing</h3><p>Creating AI systems capable of understanding and processing human language.</p></div>
+      <div class="research-card"><div class="research-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Healthcare AI</h3><p>Applying AI to medical diagnosis, disease prediction and healthcare analytics.</p></div>
+      <div class="research-card"><div class="research-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Cybersecurity</h3><p>Developing AI-driven solutions for digital security and cyber threat analysis.</p></div>
+      <div class="research-card"><div class="research-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Generative AI</h3><p>Exploring LLMs, intelligent assistants and modern AI applications.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="border-bottom:none;">
+  <div class="container contact-wrap">
+    <div class="contact-lead reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's build something.</h2>
+      <p>Open for AI internship opportunities in Machine Learning, Computer Vision, NLP and Data Science. Reach out directly or send a message.</p>
+
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:mhanzalakhan.ai095@gmail.com">
+          <div class="left"><span class="ic"><i class="fa-solid fa-envelope"></i></span><div><span class="lbl">Email</span><span class="val">mhanzalakhan.ai095@gmail.com</span></div></div>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </a>
+        <a class="contact-link" href="https://github.com/Hanzala095" target="_blank">
+          <div class="left"><span class="ic"><i class="fa-brands fa-github"></i></span><div><span class="lbl">GitHub</span><span class="val">github.com/Hanzala095</span></div></div>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/muhammad-hanzala-khan-4081492b7" target="_blank">
+          <div class="left"><span class="ic"><i class="fa-brands fa-linkedin-in"></i></span><div><span class="lbl">LinkedIn</span><span class="val">muhammad-hanzala-khan</span></div></div>
+          <i class="fa-solid fa-arrow-right arrow"></i>
+        </a>
+        <a class="contact-link" href="#">
+          <div class="left"><span class="ic"><i class="fa-solid fa-location-dot"></i></span><div><span class="lbl">Location</span><span class="val">Wah Cantt, Pakistan</span></div></div>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <!-- honeypot -->
+      <input type="text" id="cf-website" name="website" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true">
+
+      <div class="form-row">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="cfSubmit" style="width:100%;justify-content:center;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      <p class="form-note">Sends straight to my inbox via EmailJS — no page reload.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <circle cx="12" cy="12" r="7.2" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="2.3" fill="currentColor"/>
+              <path d="M2.5 12h3.6M17.9 12h3.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="logo-name">
+            <span class="logo-full">Muhammad Hanzala Khan</span>
+            <span class="logo-sub">AI Engineer</span>
+          </div>
+        </a>
+        <p class="footer-tag">AI Engineer building practical Computer Vision, NLP and Medical AI systems — open for internship opportunities.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Hanzala095" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-hanzala-khan-4081492b7" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:mhanzalakhan.ai095@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Work</h4>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:mhanzalakhan.ai095@gmail.com">Email me</a>
+        <a href="assets/resume/Muhammad_Hanzala_Khan_Resume.pdf" target="_blank">Download Resume</a>
+        <a href="#contact">Contact form</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Muhammad Hanzala Khan. Built with intent, not a template.</p>
+      <p class="footer-status"><span class="dot"></span> Open for AI Internship Opportunities</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check" id="toastIcon"></i>
+  <div>
+    <strong id="toastTitle">Message Sent</strong>
+    <p id="toastMessage">Thank you — I'll get back to you soon.</p>
+  </div>
 </div>
+
+<script src="js/app.js"></script>
 </body>
-<div id="progress-bar"></div>
 </html>
