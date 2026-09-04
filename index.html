@@ -82,7 +82,7 @@
       </div>
       <div class="hero-meta">
         <div><span class="num" data-count="3">0</span><span class="lbl">Internships</span></div>
-        <div><span class="num" data-count="11" data-suffix="+">0</span><span class="lbl">AI Projects</span></div>
+        <div><span class="num" data-count="12" data-suffix="+">0</span><span class="lbl">AI Projects</span></div>
         <div><span class="num" data-count="3">0</span><span class="lbl">Certifications</span></div>
         <div><span class="num" data-count="6">0</span><span class="lbl">Focus Areas</span></div>
       </div>
@@ -286,12 +286,13 @@
     <div class="section-head reveal">
       <span class="eyebrow">Projects</span>
       <h2>Selected work</h2>
-      <p>11 projects spanning computer vision, medical AI, NLP, cybersecurity and full-stack development.</p>
+      <p>12 projects spanning computer vision, medical AI, NLP, generative AI, cybersecurity and full-stack development.</p>
     </div>
 
     <div class="filter-bar reveal">
       <button class="filter-btn active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
+      <button class="filter-btn" data-filter="Generative AI">Generative AI</button>
       <button class="filter-btn" data-filter="Medical AI">Medical AI</button>
       <button class="filter-btn" data-filter="Natural Language Processing">NLP</button>
       <button class="filter-btn" data-filter="Cybersecurity">Cybersecurity</button>
@@ -302,7 +303,16 @@
     </div>
 
     <div class="projects-grid stagger" id="projectsGrid">
-
+<div class="project-card" data-category="Generative AI">
+  <div class="project-thumb"><span class="badge">Featured</span><img src="assets/projects/leukemia-classifier.png" alt="Leukemia Subtype Classifier"></div>
+  <div class="project-body">
+    <span class="project-cat">Generative AI · 2026</span>
+    <h3>Leukemia Subtype Classifier — CNN + RAG + n8n</h3>
+    <p>End-to-end AI system: ResNet18 CNN (99.6% accuracy) classifies leukemia subtypes, a RAG pipeline (ChromaDB + Groq LLM) generates explanations, and n8n orchestrates the full flow from image upload to result.</p>
+    <div class="project-tech"><span>PyTorch</span><span>FastAPI</span><span>RAG</span><span>ChromaDB</span><span>n8n</span><span>Docker</span></div>
+    <div class="project-links"><a href="https://github.com/Hanzala095/leukemia-cnn-rag-classifier" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+  </div>
+</div>
       <div class="project-card" data-category="Computer Vision">
         <div class="project-thumb"><span class="badge">Featured</span><img src="assets/projects/factory-compliance.png" alt="Factory Compliance Monitoring System"></div>
         <div class="project-body">
